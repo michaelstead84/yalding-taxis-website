@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yalding Taxis | Local Taxis & Airport Transfers in Kent</title>
-  <meta name="description" content="Yalding Taxis, a friendly family-run taxi service serving Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst and surrounding Kent villages. Local journeys, airport transfers and long-distance travel.">
+  <meta name="description" content="Yalding Taxis, a friendly family-run taxi service serving Yalding and surrounding Kent villages. Local journeys, airport transfers and long-distance travel, with IAM RoadSmart Masters and Advanced driving status held within our team.">
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fleet.webp" as="image">
@@ -171,7 +171,7 @@
     }
     .trust-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1px;
       background: rgba(0,0,0,.16);
     }
@@ -317,6 +317,57 @@
     .fare-table tbody tr:hover td { background: #fff8b8; }
     .fare-table tbody tr:hover td:first-child { background: #fff8b8; }
 
+    .iam-feature {
+      background: #10232d;
+      color: white;
+      border-top: 2px solid #091319;
+      border-bottom: 2px solid #091319;
+    }
+    .iam-feature .section-kicker { color: #20b5d6; }
+    .iam-feature h2 { max-width: 780px; }
+    .iam-feature .lead { color: #d8e0e4; margin-bottom: 20px; }
+    .iam-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 52px;
+      align-items: center;
+    }
+    .iam-badge-card {
+      background: white;
+      color: var(--ink);
+      border-radius: var(--radius);
+      padding: 28px 24px 24px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .iam-badge-card img {
+      width: min(230px, 100%);
+      margin: 0 auto 18px;
+    }
+    .iam-badge-caption {
+      font-size: .95rem;
+      line-height: 1.35;
+      color: #454545;
+    }
+    .iam-badge-caption strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.08rem;
+      margin-top: 3px;
+    }
+    .iam-copy p:not(.lead):not(.iam-note) { color: #e6ecef; max-width: 790px; }
+    .iam-note {
+      margin: 24px 0 22px;
+      padding: 16px 18px;
+      border-left: 5px solid var(--yellow);
+      background: rgba(255,255,255,.08);
+      border-radius: 0 14px 14px 0;
+      color: #f4f6f7;
+      max-width: 820px;
+    }
+    .iam-note strong { color: var(--yellow); }
+    .iam-feature .btn.primary { border-color: var(--yellow); }
+
     .quote { background: var(--ink); color: white; }
     .quote .section-kicker { color: var(--yellow); }
     .quote-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: start; }
@@ -397,10 +448,12 @@
       .hero { min-height: 650px; }
       .hero::before { background-position: 53% 55%; }
       .trust-grid { grid-template-columns: 1fr 1fr; }
+      .trust-grid div:last-child { grid-column: 1 / -1; }
       .cards { grid-template-columns: 1fr; }
       .card { display: grid; grid-template-columns: .85fr 1.15fr; }
       .card img { height: 100%; min-height: 210px; }
-      .airport-intro, .quote-grid, .why-grid, .fare-finder-grid { grid-template-columns: 1fr; }
+      .airport-intro, .quote-grid, .why-grid, .fare-finder-grid, .iam-grid { grid-template-columns: 1fr; }
+      .iam-badge-card { width: min(320px, 100%); margin: 0 auto; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
     }
 
@@ -477,6 +530,7 @@
         <div>Cards accepted<small>Major credit & debit cards</small></div>
         <div>Pre-booked 24/7<small>365 days a year</small></div>
         <div>Fully licensed<small>Insured & DBS-checked drivers</small></div>
+        <div>Advanced driving standards<small>IAM Masters & Advanced status within our team</small></div>
       </div>
     </div>
 
@@ -498,6 +552,26 @@
             <img src="assets/audi.webp" alt="White Yalding Taxis Audi passenger vehicle" loading="lazy">
             <div class="card-body"><h3>Long distance</h3><p>London, seaports, stadiums and longer journeys throughout Kent and further afield. No journey too short or too far.</p></div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="driving-standards" class="iam-feature">
+      <div class="wrap iam-grid">
+        <div class="iam-badge-card">
+          <img src="assets/iam-roadsmart-masters.png" alt="IAM RoadSmart Masters badge" loading="lazy">
+          <div class="iam-badge-caption">
+            Michael Stead
+            <strong>IAM RoadSmart Master Driver</strong>
+          </div>
+        </div>
+        <div class="iam-copy">
+          <div class="section-kicker">Advanced driving standards</div>
+          <h2>Independently tested advanced driving skills within our team</h2>
+          <p class="lead">Yalding Taxis owner Michael Stead is an IAM RoadSmart Master Driver. IAM RoadSmart describes its Masters standard as the ultimate challenge for civilian drivers and says the programme is designed to attain the highest standard of civilian driving ability in the country.</p>
+          <p>Our team also includes an IAM RoadSmart Advanced Driver, bringing independently tested advanced driving skills into the business alongside our local knowledge and professional taxi experience.</p>
+          <p class="iam-note"><strong>Clear and transparent:</strong> IAM RoadSmart Masters or Advanced status is held by selected Yalding Taxis drivers. An IAM-qualified driver is not guaranteed on every booking.</p>
+          <a class="btn primary" href="https://www.iamroadsmart.com/courses-services/for-individuals/iam-roadsmart-masters/" target="_blank" rel="noopener">About IAM RoadSmart Masters</a>
         </div>
       </div>
     </section>
@@ -840,6 +914,7 @@
             <li>Modern, clean, comfortable fleet</li>
             <li>Fully licensed and insured</li>
             <li>DBS-checked licensed drivers</li>
+            <li>IAM RoadSmart Masters & Advanced status within our team</li>
             <li>Major cards accepted</li>
             <li>No extra midnight charge when pre-booked</li>
           </ul>
