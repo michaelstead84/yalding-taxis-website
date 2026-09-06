@@ -3,12 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yalding Taxis | Local Taxis & Airport Transfers in Kent</title>
-  <meta name="description" content="Yalding Taxis, a friendly family-run taxi service serving Yalding and surrounding Kent villages. Local journeys, airport transfers and long-distance travel, with IAM RoadSmart Masters and Advanced driving status held within our team.">
+  <title>Yalding Taxis | Local Taxi, Airport Transfers & 8-Seater Minibus</title>
+  <meta name="description" content="Local taxi service for Yalding, Marden, Paddock Wood, East Peckham, Maidstone and nearby Kent villages. Airport transfers, long-distance travel and vehicles for up to 8 passengers.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#111111">
   <link rel="canonical" href="https://yaldingtaxis.co.uk/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/yalding-taxis-logo.png">
   <link rel="preload" href="assets/fleet.webp" as="image">
+
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yalding Taxis">
+  <meta property="og:title" content="Yalding Taxis | Local Taxi, Airport Transfers & 8-Seater Minibus">
+  <meta property="og:description" content="Local taxis, airport transfers and long-distance travel across Yalding and surrounding Kent villages, with vehicles for up to 8 passengers.">
+  <meta property="og:url" content="https://yaldingtaxis.co.uk/">
+  <meta property="og:image" content="https://yaldingtaxis.co.uk/assets/fleet.webp">
+  <meta property="og:image:alt" content="Yalding Taxis fleet">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yalding Taxis | Local Taxi, Airport Transfers & 8-Seater Minibus">
+  <meta name="twitter:description" content="Local taxis, airport transfers and long-distance travel across Yalding and surrounding Kent villages, with vehicles for up to 8 passengers.">
+  <meta name="twitter:image" content="https://yaldingtaxis.co.uk/assets/fleet.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,12 +78,17 @@
           "name": "Staplehurst"
         },
         {
+          "@type": "Place",
+          "name": "Maidstone"
+        },
+        {
           "@type": "AdministrativeArea",
           "name": "Kent"
         }
       ],
       "currenciesAccepted": "GBP",
       "paymentAccepted": "Cash, credit card and debit card",
+      "priceRange": "££",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+447877777744",
@@ -91,7 +112,8 @@
       "serviceType": [
         "Local taxi journeys",
         "Airport transfers",
-        "Long-distance taxi travel"
+        "Long-distance taxi travel",
+        "8-seat minibus and group travel"
       ],
       "provider": {
         "@id": "https://yaldingtaxis.co.uk/#business"
@@ -104,6 +126,7 @@
         "Marden",
         "Horsmonden",
         "Staplehurst",
+        "Maidstone",
         "Kent"
       ],
       "availableChannel": [
@@ -157,6 +180,23 @@
       }
     },
     {
+      "@type": "WebPage",
+      "@id": "https://yaldingtaxis.co.uk/#webpage",
+      "url": "https://yaldingtaxis.co.uk/",
+      "name": "Yalding Taxis | Local Taxi, Airport Transfers & 8-Seater Minibus",
+      "description": "Local taxi service for Yalding, Marden, Paddock Wood, East Peckham, Maidstone and nearby Kent villages, with airport transfers and vehicles for up to 8 passengers.",
+      "isPartOf": {
+        "@id": "https://yaldingtaxis.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://yaldingtaxis.co.uk/#business"
+      },
+      "mainEntity": {
+        "@id": "https://yaldingtaxis.co.uk/#taxi-service"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://yaldingtaxis.co.uk/#website",
       "url": "https://yaldingtaxis.co.uk/",
@@ -165,6 +205,44 @@
         "@id": "https://yaldingtaxis.co.uk/#business"
       },
       "inLanguage": "en-GB"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yaldingtaxis.co.uk/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which areas do Yalding Taxis cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide airport transfers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide pre-booked transfers to Gatwick, Heathrow, London City, Southend, Stansted and Luton, with guide prices shown on this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I book an 8-seater taxi or minibus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our fleet includes vehicles for up to 8 passengers. Larger-vehicle airport prices are shown alongside the 4-seat base fares."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a taxi quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call 078 777 777 44 or use the WhatsApp quote form on this page. For airport journeys, you can also use the fare finder before confirming availability."
+          }
+        }
+      ]
     }
   ]
 }
@@ -573,6 +651,12 @@
     .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
     .gallery-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 16px; }
 
+    .faq { background: var(--paper); }
+    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .faq-item { border: 1px solid var(--line); border-radius: 16px; padding: 22px; background: #fff; }
+    .faq-item h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .faq-item p { margin: 0; color: var(--muted); }
+
     .areas {
       background: var(--yellow);
       border-top: 2px solid var(--ink);
@@ -616,6 +700,7 @@
       .airport-intro, .quote-grid, .why-grid, .fare-finder-grid, .iam-grid { grid-template-columns: 1fr; }
       .iam-badge-card { width: min(320px, 100%); margin: 0 auto; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 620px) {
@@ -675,8 +760,8 @@
     <section class="hero" aria-label="Yalding Taxis fleet">
       <div class="wrap">
         <div class="eyebrow">Family-run since 2006</div>
-        <h1>Local journeys. Airport transfers. Anywhere you need to go.</h1>
-        <p>Friendly, reliable taxi travel from Yalding and surrounding villages, with comfortable vehicles for up to 8 passengers.</p>
+        <h1>Local taxis and airport transfers from Yalding and surrounding Kent villages</h1>
+        <p>Friendly, reliable local taxis, airport transfers and long-distance travel for up to 8 passengers, covering Yalding, Marden, Paddock Wood, East Peckham, Maidstone and nearby villages.</p>
         <div class="actions">
           <a class="btn primary" href="tel:+447877777744">Call 078 777 777 44</a>
           <a class="btn whatsapp" href="https://wa.me/447877777744?text=Hi%20Yalding%20Taxis%2C%20I%27d%20like%20a%20quote%20please." target="_blank" rel="noopener">WhatsApp for a quote</a>
@@ -698,12 +783,12 @@
     <section id="services" class="services">
       <div class="wrap">
         <div class="section-kicker">What we do</div>
-        <h2>One local number for short trips and long journeys</h2>
-        <p class="lead">From a lift into town to a family airport run, we cover local journeys throughout the area as well as longer-distance travel across Kent, London and beyond.</p>
+        <h2>Local taxi service, airport transfers and long-distance travel</h2>
+        <p class="lead">From a short local taxi journey to a family airport transfer, we cover Yalding and surrounding Kent villages as well as longer-distance travel across Kent, London and beyond.</p>
         <div class="cards">
           <article class="card">
             <img src="assets/doorstep.webp" alt="Yalding Taxis minibus collecting passengers from a home" loading="lazy">
-            <div class="card-body"><h3>Local journeys</h3><p>Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst and surrounding villages.</p></div>
+            <div class="card-body"><h3>Local taxi journeys</h3><p>Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding villages.</p></div>
           </article>
           <article class="card">
             <img src="assets/airport.webp" alt="Passengers boarding a Yalding Taxis minibus at an airport" loading="lazy">
@@ -1098,13 +1183,39 @@
       </div>
     </section>
 
+    <section id="faq" class="faq">
+      <div class="wrap">
+        <div class="section-kicker">Frequently asked questions</div>
+        <h2>Booking a taxi with Yalding Taxis</h2>
+        <p class="lead">A few quick answers about local journeys, airport transfers and vehicle sizes.</p>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Which areas do Yalding Taxis cover?</h3>
+            <p>We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Do you provide airport transfers?</h3>
+            <p>Yes. We provide pre-booked transfers to Gatwick, Heathrow, London City, Southend, Stansted and Luton, with guide prices shown on this page.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I book an 8-seater taxi or minibus?</h3>
+            <p>Yes. Our fleet includes vehicles for up to 8 passengers. Larger-vehicle airport prices are shown alongside the 4-seat base fares.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How do I get a taxi quote?</h3>
+            <p>Call 078 777 777 44 or use the WhatsApp quote form on this page. For airport journeys, you can also use the fare finder before confirming availability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="areas">
       <div class="wrap">
         <div class="section-kicker">Local coverage</div>
-        <h2>Based in Yalding, serving the surrounding villages</h2>
-        <p class="lead">We regularly cover the local area, with long-distance journeys available throughout Kent and beyond.</p>
+        <h2>Taxi coverage in Yalding, Marden, Paddock Wood and nearby Kent villages</h2>
+        <p class="lead">We regularly provide pre-booked taxi journeys across the local area, including Yalding, Marden, Paddock Wood, East Peckham, Horsmonden, Staplehurst and Maidstone. Longer-distance journeys are available throughout Kent and beyond.</p>
         <div class="area-list">
-          <span>Yalding</span><span>East Peckham</span><span>Paddock Wood</span><span>Marden</span><span>Horsmonden</span><span>Staplehurst</span><span>Surrounding villages</span>
+          <span>Yalding</span><span>East Peckham</span><span>Paddock Wood</span><span>Marden</span><span>Horsmonden</span><span>Staplehurst</span><span>Maidstone</span><span>Surrounding villages</span>
         </div>
       </div>
     </section>
