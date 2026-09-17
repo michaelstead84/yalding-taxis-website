@@ -71,6 +71,10 @@
         },
         {
           "@type": "Place",
+          "name": "Wateringbury"
+        },
+        {
+          "@type": "Place",
           "name": "Horsmonden"
         },
         {
@@ -124,6 +128,7 @@
         "East Peckham",
         "Paddock Wood",
         "Marden",
+        "Wateringbury",
         "Horsmonden",
         "Staplehurst",
         "Maidstone",
@@ -215,7 +220,7 @@
           "name": "Which areas do Yalding Taxis cover?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield."
+            "text": "We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Wateringbury, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield."
           }
         },
         {
@@ -664,7 +669,8 @@
     }
     .areas .lead { color: rgba(0,0,0,.68); }
     .area-list { display: flex; flex-wrap: wrap; gap: 9px; }
-    .area-list span { padding: 9px 13px; background: white; border: 1px solid #202020; border-radius: 999px; font-weight: 750; }
+    .area-list span, .area-list a { padding: 9px 13px; background: white; border: 1px solid #202020; border-radius: 999px; font-weight: 750; text-decoration: none; }
+    .area-list a:hover { background: #111; color: #fff; }
 
     footer { background: var(--ink); color: white; padding: 45px 0 95px; }
     .footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: start; }
@@ -748,6 +754,7 @@
       <a class="brand" href="#top" aria-label="Yalding Taxis home"><span class="a">YALDING</span><span class="b">TAXIS</span></a>
       <div class="navlinks">
         <a href="#services">Services</a>
+        <a href="areas.html">Areas</a>
         <a href="#airports">Airport prices</a>
         <a href="#fleet">Fleet</a>
         <a href="#quote">Get a quote</a>
@@ -788,7 +795,7 @@
         <div class="cards">
           <article class="card">
             <img src="assets/doorstep.webp" alt="Yalding Taxis minibus collecting passengers from a home" loading="lazy">
-            <div class="card-body"><h3>Local taxi journeys</h3><p>Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding villages.</p></div>
+            <div class="card-body"><h3>Local taxi journeys</h3><p>Yalding, East Peckham, Paddock Wood, Marden, Wateringbury, Horsmonden, Staplehurst, Maidstone and surrounding villages.</p></div>
           </article>
           <article class="card">
             <img src="assets/airport.webp" alt="Passengers boarding a Yalding Taxis minibus at an airport" loading="lazy">
@@ -1191,7 +1198,7 @@
         <div class="faq-grid">
           <article class="faq-item">
             <h3>Which areas do Yalding Taxis cover?</h3>
-            <p>We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield.</p>
+            <p>We regularly cover Yalding, East Peckham, Paddock Wood, Marden, Wateringbury, Horsmonden, Staplehurst, Maidstone and surrounding Kent villages, with longer journeys available further afield.</p>
           </article>
           <article class="faq-item">
             <h3>Do you provide airport transfers?</h3>
@@ -1213,9 +1220,9 @@
       <div class="wrap">
         <div class="section-kicker">Local coverage</div>
         <h2>Taxi coverage in Yalding, Marden, Paddock Wood and nearby Kent villages</h2>
-        <p class="lead">We regularly provide pre-booked taxi journeys across the local area, including Yalding, Marden, Paddock Wood, East Peckham, Horsmonden, Staplehurst and Maidstone. Longer-distance journeys are available throughout Kent and beyond.</p>
+        <p class="lead">We regularly provide pre-booked taxi journeys across the local area. Explore our dedicated pages for Marden, Paddock Wood, East Peckham and Wateringbury, or see the wider areas we cover.</p>
         <div class="area-list">
-          <span>Yalding</span><span>East Peckham</span><span>Paddock Wood</span><span>Marden</span><span>Horsmonden</span><span>Staplehurst</span><span>Maidstone</span><span>Surrounding villages</span>
+          <span>Yalding</span><a href="marden-taxis.html">Marden</a><a href="paddock-wood-taxis.html">Paddock Wood</a><a href="east-peckham-taxis.html">East Peckham</a><a href="wateringbury-taxis.html">Wateringbury</a><a href="areas.html">More nearby areas</a>
         </div>
       </div>
     </section>
